@@ -1,0 +1,191 @@
+ticker,theme
+NVDA,AI Infrastructure
+AMD,AI Infrastructure
+AVGO,AI Infrastructure
+MRVL,AI Infrastructure
+SMCI,AI Infrastructure
+VRT,AI Infrastructure
+MU,AI Infrastructure
+ARM,AI Infrastructure
+CRDO,AI Infrastructure
+ANET,AI Infrastructure
+DELL,AI Infrastructure
+NBIS,AI Infrastructure
+APLD,AI Infrastructure
+IREN,AI Infrastructure
+CIFR,AI Infrastructure
+GLW,AI Infrastructure
+COHR,AI Infrastructure
+LITE,AI Infrastructure
+AVTR,AI Infrastructure
+AMPL,AI Infrastructure
+MSFT,Cloud / SaaS
+GOOGL,Cloud / SaaS
+META,Cloud / SaaS
+AMZN,Cloud / SaaS
+ORCL,Cloud / SaaS
+CRM,Cloud / SaaS
+NOW,Cloud / SaaS
+SNOW,Cloud / SaaS
+DDOG,Cloud / SaaS
+MDB,Cloud / SaaS
+NET,Cloud / SaaS
+TEAM,Cloud / SaaS
+WDAY,Cloud / SaaS
+HUBS,Cloud / SaaS
+ADBE,Cloud / SaaS
+INTU,Cloud / SaaS
+PLTR,Cloud / SaaS
+PANW,Cybersecurity
+CRWD,Cybersecurity
+ZS,Cybersecurity
+FTNT,Cybersecurity
+OKTA,Cybersecurity
+S,Cybersecurity
+CYBR,Cybersecurity
+RPD,Cybersecurity
+TENB,Cybersecurity
+QLYS,Cybersecurity
+VRNS,Cybersecurity
+NTNX,Cybersecurity
+KTOS,Defense / Space
+LMT,Defense / Space
+RTX,Defense / Space
+NOC,Defense / Space
+GD,Defense / Space
+LHX,Defense / Space
+LDOS,Defense / Space
+CACI,Defense / Space
+SAIC,Defense / Space
+HII,Defense / Space
+AVAV,Defense / Space
+RKLB,Defense / Space
+ASTS,Defense / Space
+RCAT,Defense / Space
+OKLO,Nuclear / Grid / Energy
+SMR,Nuclear / Grid / Energy
+CEG,Nuclear / Grid / Energy
+VST,Nuclear / Grid / Energy
+NRG,Nuclear / Grid / Energy
+GEV,Nuclear / Grid / Energy
+ETN,Nuclear / Grid / Energy
+BWXT,Nuclear / Grid / Energy
+LEU,Nuclear / Grid / Energy
+NNE,Nuclear / Grid / Energy
+UEC,Nuclear / Grid / Energy
+CCJ,Nuclear / Grid / Energy
+DHR,Healthcare Innovation
+VEEV,Healthcare Innovation
+ISRG,Healthcare Innovation
+DXCM,Healthcare Innovation
+PODD,Healthcare Innovation
+EXAS,Healthcare Innovation
+TDOC,Healthcare Innovation
+DOCS,Healthcare Innovation
+HIMS,Healthcare Innovation
+PNTG,Healthcare Innovation
+TMDX,Healthcare Innovation
+INSP,Healthcare Innovation
+TEM,Healthcare Innovation
+GH,Healthcare Innovation
+NTLA,Biotech
+CRSP,Biotech
+BEAM,Biotech
+NVAX,Biotech
+VRTX,Biotech
+REGN,Biotech
+MRNA,Biotech
+SQ,Fintech / Payments
+PYPL,Fintech / Payments
+AFRM,Fintech / Payments
+SOFI,Fintech / Payments
+UPST,Fintech / Payments
+COIN,Fintech / Payments
+PAYS,Fintech / Payments
+TOST,Fintech / Payments
+MQ,Fintech / Payments
+FOUR,Fintech / Payments
+GPN,Fintech / Payments
+UVE,Financials / Insurance
+KRUS,Financials / Insurance
+TSLA,EV / Autonomy
+RIVN,EV / Autonomy
+LCID,EV / Autonomy
+NIO,EV / Autonomy
+ALAB,Semis
+LSCC,Semis
+ON,Semis
+MPWR,Semis
+QCOM,Semis
+TXN,Semis
+ADI,Semis
+NXPI,Semis
+SWKS,Semis
+LRCX,Semis
+AMAT,Semis
+KLAC,Semis
+ASML,Semis
+TSM,Semis
+IONQ,Quantum Computing
+RGTI,Quantum Computing
+QBTS,Quantum Computing
+QUBT,Quantum Computing
+IRBT,Robotics / Automation
+PATH,Robotics / Automation
+SYM,Robotics / Automation
+ROK,Robotics / Automation
+TER,Robotics / Automation
+CRSR,Consumer Tech / Gaming
+LOGI,Consumer Tech / Gaming
+RBLX,Consumer Tech / Gaming
+U,Consumer Tech / Gaming
+TTWO,Consumer Tech / Gaming
+EA,Consumer Tech / Gaming
+ABNB,Consumer Internet
+UBER,Consumer Internet
+DASH,Consumer Internet
+CHWY,Consumer Internet
+ETSY,Consumer Internet
+PUBM,AdTech / Data
+TTD,AdTech / Data
+APP,AdTech / Data
+CRTO,AdTech / Data
+MGNI,AdTech / Data
+DV,AdTech / Data
+WLDN,Industrials / Reshoring
+PWR,Industrials / Reshoring
+EME,Industrials / Reshoring
+MTZ,Industrials / Reshoring
+J,Industrials / Reshoring
+FIX,Industrials / Reshoring
+NNBR,Industrials / Reshoring
+IIIN,Industrials / Reshoring
+AIT,Industrials / Reshoring
+CECO,Industrials / Reshoring
+MOD,Industrials / Reshoring
+TJGC,Small-Cap Momentum
+ACHR,eVTOL / Future Mobility
+JOBY,eVTOL / Future Mobility
+LILM,eVTOL / Future Mobility
+MARA,Crypto-Adjacent Equities
+RIOT,Crypto-Adjacent Equities
+CLSK,Crypto-Adjacent Equities
+MSTR,Crypto-Adjacent Equities
+HOOD,Crypto-Adjacent Equities
+BMBL,Internet / Media
+RDDT,Internet / Media
+PINS,Internet / Media
+SNAP,Internet / Media
+SPOT,Internet / Media
+DJT,Small-Cap Momentum
+GME,Small-Cap Momentum
+AMC,Small-Cap Momentum
+SOUN,AI Infrastructure
+BBAI,AI Infrastructure
+AI,AI Infrastructure
+GTLB,Cloud / SaaS
+CFLT,Cloud / SaaS
+ESTC,Cloud / SaaS
+FROG,Cloud / SaaS
+PD,Cloud / SaaS
+BILL,Fintech / Payments

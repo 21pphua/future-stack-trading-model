@@ -1,0 +1,20 @@
+ticker,value,theme
+# EDIT THIS FILE with your actual current holdings before relying on the portfolio report.
+# value = current dollar market value of the position (shares * last price), not cost basis.
+# theme = whatever grouping you want diversification measured against (sector, thesis, etc.)
+#         -- use the SAME theme label for positions you consider correlated with each other.
+# The rows below are placeholders reflecting names discussed earlier in this session,
+# with illustrative values only -- NOT your real position sizes. Replace them.
+NVDA,10000,AI Infrastructure
+MSFT,8000,AI Infrastructure
+GOOGL,6000,AI Infrastructure
+META,6000,AI Infrastructure
+DHR,4000,Healthcare Innovation
+VEEV,3000,Healthcare Innovation
+OKLO,2500,Nuclear / Grid / Energy
+KTOS,2500,Defense / Space
+WLDN,2000,Industrials / Reshoring
+CACI,2000,Defense / Space
+ETHU,1500,Leveraged / Tactical
+NNBR,1500,Industrials / Reshoring
+TEM,2000,Healthcare Innovation
