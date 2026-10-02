@@ -1,0 +1,74 @@
+name: Daily Scan
+
+on:
+  schedule:
+    # 21:30 UTC, weekdays -- shortly after the US market close. UTC doesn't
+    # shift for US daylight saving, so this lands ~4:30pm ET in winter and
+    # ~5:30pm ET in summer. Adjust if you want it pinned to a local clock
+    # time instead.
+    - cron: "30 21 * * 1-5"
+  workflow_dispatch:   # lets you trigger a run manually from the Actions tab
+    inputs:
+      scan_mode:
+        description: "Which tickers to scan"
+        required: false
+        type: choice
+        default: "both"
+        options:
+          - both            # curated universe.csv + the broad market-wide discovery pass
+          - universe_only   # only re-check universe.csv (fast, skips the fresh-list pass)
+          - fresh_list_only  # skip universe.csv entirely, only the broad market-wide scan
+      broad_max:
+        description: "Cap on non-watchlist tickers for the broad scan (blank = no cap; use a small number like 300 for a fast manual test)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write   # to commit results/latest.json back to the repo
+  issues: write      # to open the results Issue
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    # The broad market-wide discovery pass (pulling and liquidity-checking thousands of
+    # tickers, not just your ~190-name watchlist) makes this run much longer than before --
+    # give it real headroom instead of hitting GitHub's 6-hour default ceiling by surprise.
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run the daily scan
+        run: |
+          ARGS=()
+          case "${{ github.event.inputs.scan_mode }}" in
+            universe_only)
+              ARGS+=(--no-broad-scan)
+              ;;
+            fresh_list_only)
+              ARGS+=(--no-universe-scan)
+              ;;
+          esac
+          if [ -n "${{ github.event.inputs.broad_max }}" ]; then
+            ARGS+=(--broad-max "${{ github.event.inputs.broad_max }}")
+          fi
+          python3 run_daily_scan.py "${ARGS[@]}"
+
+      - name: Open a results Issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh issue create --title "Daily Scan -- $(date -u +%Y-%m-%d)" --body-file report.md
+
+      - name: Commit results/latest.json back to the repo
+        run: |
+          git config user.name "daily-scan-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add results/latest.json
+          git diff --cached --quiet || git commit -m "Daily scan results: $(date -u +%Y-%m-%d)"
+          git push
