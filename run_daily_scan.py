@@ -167,6 +167,25 @@ def run_broad_scan(exclude_tickers, min_price=3.0, min_avg_dollar_vol=5_000_000,
     return candidates, errors, n_universe, n_liquid
 
 
+# GitHub rejects an Issue body over 65,536 characters outright (a GraphQL
+# hard limit, not configurable). A scan that surfaces many candidates --
+# especially a broad-market pass with a low bar -- can produce a report
+# well past that. Leave real headroom below the actual cap so formatting
+# differences never tip it over.
+MAX_ISSUE_CHARS = 60_000
+
+
+def _candidate_block(c):
+    tag = " (discovered)" if c.get("source") == "broad_scan" else ""
+    pct = _quant_pct(c["quant"])
+    return (
+        f"\n### {c['ticker']} -- {c['theme']}{tag}\n"
+        f"Future-Stack mechanical score: {c['quant']['quant_total']}/"
+        f"{c['quant']['quant_cap_achieved']} ({pct:.0%} of achievable)\n"
+        "```\n" + quant_scorer.format_quant_result(c["quant"]) + "\n```"
+    )
+
+
 def format_markdown(candidates, errors, port_report, as_of, broad_stats=None, broad_min_quant_pct=0.55):
     lines = [f"# Daily Scan -- {as_of}", ""]
     lines.append("_Future-Stack Trading Model only -- candidates are picked purely by the "
@@ -184,32 +203,81 @@ def format_markdown(candidates, errors, port_report, as_of, broad_stats=None, br
             lines.append("\n_Broad scan: could not fetch the market-wide ticker list this run -- "
                           "see job log. Curated watchlist results below are unaffected._")
 
-    lines.append("\n## Candidates")
-    if not candidates:
-        lines.append("\nNo candidates cleared the Future-Stack mechanical bar today.")
-    else:
-        for c in candidates:
-            tag = " (discovered)" if c.get("source") == "broad_scan" else ""
-            pct = _quant_pct(c["quant"])
-            lines.append(f"\n### {c['ticker']} -- {c['theme']}{tag}")
-            lines.append(f"Future-Stack mechanical score: {c['quant']['quant_total']}/"
-                          f"{c['quant']['quant_cap_achieved']} ({pct:.0%} of achievable)")
-            lines.append("```")
-            lines.append(quant_scorer.format_quant_result(c["quant"]))
-            lines.append("```")
-
+    # Everything after "## Candidates" is built separately so we can budget
+    # it against MAX_ISSUE_CHARS -- the head/tail below is fixed overhead
+    # that always needs to fit, and errors/portfolio/golden-rule always
+    # appear in full (they're small and important; candidates are the part
+    # that can be unbounded in number).
+    tail_lines = []
     if errors:
-        lines.append(f"\n_Could not fetch data for: {', '.join(errors)} (skipped, not scored as zero)._")
+        tail_lines.append(f"\n_Could not fetch data for: {', '.join(errors)} (skipped, not scored as zero)._")
+    tail_lines.append("\n## Your Portfolio")
+    tail_lines.append(portfolio_report.format_report(port_report))
+    tail_lines.append(f"\n---\n{GOLDEN_RULE}")
+    tail_lines.append("\nThis scan is 100% mechanical (financial-ratio thresholds, plus a basic "
+                       "price/liquidity floor for the broad-market pass) -- it does not judge moat, "
+                       "management, proof points, or sector thesis. Treat every candidate above as a "
+                       "research lead, not a conclusion.")
+    tail = "\n".join(tail_lines)
 
-    lines.append("\n## Your Portfolio")
-    lines.append(portfolio_report.format_report(port_report))
+    head = "\n".join(lines) + "\n\n## Candidates"
 
-    lines.append(f"\n---\n{GOLDEN_RULE}")
-    lines.append("\nThis scan is 100% mechanical (financial-ratio thresholds, plus a basic "
-                  "price/liquidity floor for the broad-market pass) -- it does not judge moat, "
-                  "management, proof points, or sector thesis. Treat every candidate above as a "
-                  "research lead, not a conclusion.")
-    return "\n".join(lines)
+    if not candidates:
+        candidates_md = "\nNo candidates cleared the Future-Stack mechanical bar today."
+        return head + candidates_md + "\n" + tail
+
+    # Reserve a slice of the total budget for the compact fallback table up
+    # front (it has its own unbounded size -- one row per leftover
+    # candidate -- so it needs its own budget, not just a fixed-size note).
+    overhead = len(head) + len(tail)
+    total_budget = MAX_ISSUE_CHARS - overhead
+    full_budget = int(total_budget * 0.7)   # most of the budget goes to full detail blocks
+    compact_budget = total_budget - full_budget
+
+    full_blocks = []
+    used = 0
+    cutoff_index = len(candidates)
+    for i, c in enumerate(candidates):
+        block = _candidate_block(c)
+        if used + len(block) > full_budget:
+            cutoff_index = i
+            break
+        full_blocks.append(block)
+        used += len(block)
+
+    candidates_md = "".join(full_blocks)
+
+    if cutoff_index < len(candidates):
+        remaining = candidates[cutoff_index:]
+
+        def compact_row(c):
+            tag = " (discovered)" if c.get("source") == "broad_scan" else ""
+            return (f"| {c['ticker']} | {c['theme']}{tag} "
+                    f"| {c['quant']['quant_total']}/{c['quant']['quant_cap_achieved']} "
+                    f"({_quant_pct(c['quant']):.0%}) |")
+
+        table_header = "| Ticker | Theme | Score |\n|---|---|---|\n"
+        compact_rows = []
+        compact_used = len(table_header)
+        shown_cutoff = len(remaining)
+        for i, c in enumerate(remaining):
+            row = compact_row(c)
+            if compact_used + len(row) + 1 > compact_budget:
+                shown_cutoff = i
+                break
+            compact_rows.append(row)
+            compact_used += len(row) + 1
+
+        still_omitted = remaining[shown_cutoff:]
+        note = (f"\n\n_{len(remaining)} more candidate(s) cleared the bar but are omitted above purely to "
+                f"keep this Issue under GitHub's size limit -- full detail for every candidate is always "
+                f"in `results/latest.json` and the dashboard"
+                + (f", including {len(still_omitted)} not even listed in the compact table below"
+                   if still_omitted else "")
+                + ":_\n\n" + table_header + "\n".join(compact_rows))
+        candidates_md += note
+
+    return head + candidates_md + "\n" + tail
 
 
 def main():
