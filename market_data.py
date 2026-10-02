@@ -87,8 +87,8 @@ def fetch_fundamentals(ticker, max_retries=2, retry_delay=2.0):
 # screen on it.
 # ---------------------------------------------------------------------------
 
-NASDAQ_LISTED_URL = "https://www.nasdaqtrader.com/dynamic/SymDirectory/nasdaqlisted.txt"
-OTHER_LISTED_URL = "https://www.nasdaqtrader.com/dynamic/SymDirectory/otherlisted.txt"
+NASDAQ_LISTED_URL = "https://ftp.nasdaqtrader.com/symboldirectory/nasdaqlisted.txt"
+OTHER_LISTED_URL = "https://ftp.nasdaqtrader.com/symboldirectory/otherlisted.txt"
 SEC_TICKERS_URL = "https://www.sec.gov/files/company_tickers.json"
 
 # nasdaqtrader.com will silently reject a request that doesn't look like it
@@ -140,7 +140,13 @@ def _fetch_sec_ticker_fallback(max_retries=2, retry_delay=2.0):
     import requests
 
     headers = dict(_BROWSER_HEADERS)
-    headers["User-Agent"] = "trading-system-bot/1.0 (github.com/21pphua/trading-system-bot)"
+    # SEC's fair-access policy (sec.gov/os/webmaster-faq#developers) asks for
+    # "Sample Company Name AdminContact@sample.com" exactly -- an
+    # organization name plus a real contact email, not a bot-looking string.
+    # The previous "trading-system-bot/1.0 (github.com/...)" UA didn't match
+    # that shape and was getting a flat 403 regardless of which IP it came
+    # from.
+    headers["User-Agent"] = "Future-Stack-Trading-Model pphamhua@empireworks.com"
     for attempt in range(max_retries + 1):
         try:
             resp = requests.get(SEC_TICKERS_URL, headers=headers, timeout=30)
