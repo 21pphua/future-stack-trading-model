@@ -292,6 +292,10 @@ def main():
                     help="Only show curated watchlist names scoring at least this fraction of their achievable Future-Stack points (default 0.0 = show all).")
     p.add_argument("--no-broad-scan", action="store_true",
                     help="Skip the market-wide discovery pass and only re-check universe.csv (fast, old behavior).")
+    p.add_argument("--no-universe-scan", action="store_true",
+                    help="Skip your curated universe.csv entirely and only run the broad market-wide "
+                         "discovery pass (a 'fresh list only' run). Mutually exclusive with --no-broad-scan "
+                         "in practice -- passing both just produces an empty candidate list.")
     p.add_argument("--broad-max", type=int, default=None,
                     help="Cap how many non-watchlist tickers the broad scan even considers, before the liquidity filter (safety valve for a quick manual test).")
     p.add_argument("--broad-max-liquid", type=int, default=None,
@@ -303,10 +307,16 @@ def main():
     args = p.parse_args()
 
     as_of = datetime.date.today().isoformat()
-    candidates, errors = run_scan(args.universe, limit=args.limit, min_quant_pct=args.min_quant_pct)
+    if args.no_universe_scan:
+        candidates, errors = [], []
+    else:
+        candidates, errors = run_scan(args.universe, limit=args.limit, min_quant_pct=args.min_quant_pct)
 
     broad_stats = None
     if not args.no_broad_scan:
+        # Still exclude your curated tickers from the broad pass even when
+        # --no-universe-scan is set, so a name already on your watchlist
+        # doesn't show up twice tagged "(discovered)".
         curated_tickers = {t for t, _ in load_universe(args.universe)}
         broad_candidates, broad_errors, n_universe, n_liquid = run_broad_scan(
             curated_tickers, min_price=args.broad_min_price,
