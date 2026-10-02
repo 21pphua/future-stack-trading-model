@@ -9,6 +9,15 @@ on:
     - cron: "30 21 * * 1-5"
   workflow_dispatch:   # lets you trigger a run manually from the Actions tab
     inputs:
+      scan_mode:
+        description: "Which tickers to scan"
+        required: false
+        type: choice
+        default: "both"
+        options:
+          - both            # curated universe.csv + the broad market-wide discovery pass
+          - universe_only   # only re-check universe.csv (fast, skips the fresh-list pass)
+          - fresh_list_only  # skip universe.csv entirely, only the broad market-wide scan
       broad_max:
         description: "Cap on non-watchlist tickers for the broad scan (blank = no cap; use a small number like 300 for a fast manual test)"
         required: false
@@ -37,11 +46,19 @@ jobs:
 
       - name: Run the daily scan
         run: |
+          ARGS=()
+          case "${{ github.event.inputs.scan_mode }}" in
+            universe_only)
+              ARGS+=(--no-broad-scan)
+              ;;
+            fresh_list_only)
+              ARGS+=(--no-universe-scan)
+              ;;
+          esac
           if [ -n "${{ github.event.inputs.broad_max }}" ]; then
-            python3 run_daily_scan.py --broad-max "${{ github.event.inputs.broad_max }}"
-          else
-            python3 run_daily_scan.py
+            ARGS+=(--broad-max "${{ github.event.inputs.broad_max }}")
           fi
+          python3 run_daily_scan.py "${ARGS[@]}"
 
       - name: Open a results Issue
         env:
