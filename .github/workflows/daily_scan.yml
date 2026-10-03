@@ -24,7 +24,7 @@ on:
         default: ""
 
 permissions:
-  contents: write   # to commit results/latest.json back to the repo
+  contents: write   # to commit results/ back to the repo
   issues: write      # to open the results Issue
 
 jobs:
@@ -60,15 +60,20 @@ jobs:
           fi
           python3 run_daily_scan.py "${ARGS[@]}"
 
+      - name: Fetch per-ticker detail (chart, stats, news, insiders)
+        # Never fails the job -- a missing detail file just shows a notice in the dashboard.
+        continue-on-error: true
+        run: python3 ticker_details.py
+
       - name: Open a results Issue
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh issue create --title "Daily Scan -- $(date -u +%Y-%m-%d)" --body-file report.md
 
-      - name: Commit results/latest.json back to the repo
+      - name: Commit results/ back to the repo
         run: |
           git config user.name "daily-scan-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add results/latest.json
+          git add -A results/
           git diff --cached --quiet || git commit -m "Daily scan results: $(date -u +%Y-%m-%d)"
           git push
