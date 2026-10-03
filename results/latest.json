@@ -1,7 +1,64 @@
 {
-  "as_of": "2026-10-02",
-  "generated_at_utc": "2026-10-02T23:01:35.956417Z",
+  "as_of": "2026-10-03",
+  "generated_at_utc": "2026-10-03T18:02:34.423109Z",
   "candidates": [
+    {
+      "ticker": "AII",
+      "theme": "Financial Services",
+      "quant": {
+        "ticker": "AII",
+        "quant_details": {
+          "Revenue Quality & Growth": {
+            "score": 12,
+            "reason": "trailing revenue growth 54.6%"
+          },
+          "Margin Path / Unit Economics": {
+            "score": 10,
+            "reason": "operating margin 40.3%"
+          },
+          "FCF & Balance Sheet": {
+            "score": 12,
+            "reason": "FCF margin 82.4%, net cash position"
+          },
+          "Valuation": {
+            "score": 8,
+            "reason": "P/E = 6.2"
+          },
+          "Macro / Rate Sensitivity": {
+            "score": 5,
+            "reason": "beta 1.00, debt/equity ~0.09x"
+          }
+        },
+        "quant_total": 47,
+        "quant_cap_achieved": 47,
+        "quant_cap_full": 47,
+        "missing_data_categories": [],
+        "qualitative_pending": [
+          [
+            "Structural Sector Future",
+            10
+          ],
+          [
+            "Future-Stack Role",
+            7
+          ],
+          [
+            "Durable Moat",
+            14
+          ],
+          [
+            "Management & Capital Allocation",
+            8
+          ],
+          [
+            "Proof / Milestone Quality",
+            14
+          ]
+        ],
+        "qualitative_cap_total": 53
+      },
+      "source": "broad_scan"
+    },
     {
       "ticker": "AAUC",
       "theme": "Basic Materials",
@@ -288,6 +345,63 @@
       "source": "broad_scan"
     },
     {
+      "ticker": "AIG",
+      "theme": "Financial Services",
+      "quant": {
+        "ticker": "AIG",
+        "quant_details": {
+          "Revenue Quality & Growth": {
+            "score": 4,
+            "reason": "trailing revenue growth 0.5%"
+          },
+          "Margin Path / Unit Economics": {
+            "score": 8,
+            "reason": "operating margin 19.4%"
+          },
+          "FCF & Balance Sheet": {
+            "score": 12,
+            "reason": "FCF margin 27.5%, net cash position"
+          },
+          "Valuation": {
+            "score": 8,
+            "reason": "P/E = 13.7"
+          },
+          "Macro / Rate Sensitivity": {
+            "score": 5,
+            "reason": "beta 0.51, debt/equity ~0.22x"
+          }
+        },
+        "quant_total": 37,
+        "quant_cap_achieved": 47,
+        "quant_cap_full": 47,
+        "missing_data_categories": [],
+        "qualitative_pending": [
+          [
+            "Structural Sector Future",
+            10
+          ],
+          [
+            "Future-Stack Role",
+            7
+          ],
+          [
+            "Durable Moat",
+            14
+          ],
+          [
+            "Management & Capital Allocation",
+            8
+          ],
+          [
+            "Proof / Milestone Quality",
+            14
+          ]
+        ],
+        "qualitative_cap_total": 53
+      },
+      "source": "broad_scan"
+    },
+    {
       "ticker": "ABX",
       "theme": "Financial Services",
       "quant": {
@@ -426,6 +540,63 @@
           "Macro / Rate Sensitivity": {
             "score": 5,
             "reason": "beta 0.77, debt/equity ~0.50x"
+          }
+        },
+        "quant_total": 36,
+        "quant_cap_achieved": 47,
+        "quant_cap_full": 47,
+        "missing_data_categories": [],
+        "qualitative_pending": [
+          [
+            "Structural Sector Future",
+            10
+          ],
+          [
+            "Future-Stack Role",
+            7
+          ],
+          [
+            "Durable Moat",
+            14
+          ],
+          [
+            "Management & Capital Allocation",
+            8
+          ],
+          [
+            "Proof / Milestone Quality",
+            14
+          ]
+        ],
+        "qualitative_cap_total": 53
+      },
+      "source": "broad_scan"
+    },
+    {
+      "ticker": "ALL",
+      "theme": "Financial Services",
+      "quant": {
+        "ticker": "ALL",
+        "quant_details": {
+          "Revenue Quality & Growth": {
+            "score": 6,
+            "reason": "trailing revenue growth 11.8%"
+          },
+          "Margin Path / Unit Economics": {
+            "score": 8,
+            "reason": "operating margin 22.8%"
+          },
+          "FCF & Balance Sheet": {
+            "score": 9,
+            "reason": "FCF margin 21.6%, net debt position"
+          },
+          "Valuation": {
+            "score": 8,
+            "reason": "P/E = 4.5"
+          },
+          "Macro / Rate Sensitivity": {
+            "score": 5,
+            "reason": "beta 0.15, debt/equity ~0.22x"
           }
         },
         "quant_total": 36,
@@ -934,7 +1105,7 @@
           },
           "Valuation": {
             "score": 6,
-            "reason": "P/E = 23.8"
+            "reason": "P/E = 23.6"
           },
           "Macro / Rate Sensitivity": {
             "score": 3,
@@ -991,11 +1162,125 @@
           },
           "Valuation": {
             "score": 8,
-            "reason": "P/E = 7.4"
+            "reason": "P/E = 7.3"
           },
           "Macro / Rate Sensitivity": {
             "score": 3,
             "reason": "beta 0.38, debt/equity ~0.63x"
+          }
+        },
+        "quant_total": 34,
+        "quant_cap_achieved": 47,
+        "quant_cap_full": 47,
+        "missing_data_categories": [],
+        "qualitative_pending": [
+          [
+            "Structural Sector Future",
+            10
+          ],
+          [
+            "Future-Stack Role",
+            7
+          ],
+          [
+            "Durable Moat",
+            14
+          ],
+          [
+            "Management & Capital Allocation",
+            8
+          ],
+          [
+            "Proof / Milestone Quality",
+            14
+          ]
+        ],
+        "qualitative_cap_total": 53
+      },
+      "source": "broad_scan"
+    },
+    {
+      "ticker": "AIZ",
+      "theme": "Financial Services",
+      "quant": {
+        "ticker": "AIZ",
+        "quant_details": {
+          "Revenue Quality & Growth": {
+            "score": 6,
+            "reason": "trailing revenue growth 9.4%"
+          },
+          "Margin Path / Unit Economics": {
+            "score": 6,
+            "reason": "operating margin 11.7%"
+          },
+          "FCF & Balance Sheet": {
+            "score": 9,
+            "reason": "FCF margin 16.0%, net debt position"
+          },
+          "Valuation": {
+            "score": 8,
+            "reason": "P/E = 12.8"
+          },
+          "Macro / Rate Sensitivity": {
+            "score": 5,
+            "reason": "beta 0.54, debt/equity ~0.36x"
+          }
+        },
+        "quant_total": 34,
+        "quant_cap_achieved": 47,
+        "quant_cap_full": 47,
+        "missing_data_categories": [],
+        "qualitative_pending": [
+          [
+            "Structural Sector Future",
+            10
+          ],
+          [
+            "Future-Stack Role",
+            7
+          ],
+          [
+            "Durable Moat",
+            14
+          ],
+          [
+            "Management & Capital Allocation",
+            8
+          ],
+          [
+            "Proof / Milestone Quality",
+            14
+          ]
+        ],
+        "qualitative_cap_total": 53
+      },
+      "source": "broad_scan"
+    },
+    {
+      "ticker": "AJG",
+      "theme": "Financial Services",
+      "quant": {
+        "ticker": "AJG",
+        "quant_details": {
+          "Revenue Quality & Growth": {
+            "score": 10,
+            "reason": "trailing revenue growth 30.9%"
+          },
+          "Margin Path / Unit Economics": {
+            "score": 8,
+            "reason": "operating margin 19.2%"
+          },
+          "FCF & Balance Sheet": {
+            "score": 9,
+            "reason": "FCF margin 13.8%, net debt position"
+          },
+          "Valuation": {
+            "score": 4,
+            "reason": "P/E = 37.4"
+          },
+          "Macro / Rate Sensitivity": {
+            "score": 3,
+            "reason": "beta 0.51, debt/equity ~0.59x"
           }
         },
         "quant_total": 34,
@@ -1143,6 +1428,120 @@
       "source": "broad_scan"
     },
     {
+      "ticker": "ALB",
+      "theme": "Basic Materials",
+      "quant": {
+        "ticker": "ALB",
+        "quant_details": {
+          "Revenue Quality & Growth": {
+            "score": 10,
+            "reason": "trailing revenue growth 31.1%"
+          },
+          "Margin Path / Unit Economics": {
+            "score": 10,
+            "reason": "operating margin 27.7%"
+          },
+          "FCF & Balance Sheet": {
+            "score": 9,
+            "reason": "FCF margin 22.6%, net debt position"
+          },
+          "Valuation": {
+            "score": 1,
+            "reason": "P/E = 387.4"
+          },
+          "Macro / Rate Sensitivity": {
+            "score": 3,
+            "reason": "beta 1.33, debt/equity ~0.19x"
+          }
+        },
+        "quant_total": 33,
+        "quant_cap_achieved": 47,
+        "quant_cap_full": 47,
+        "missing_data_categories": [],
+        "qualitative_pending": [
+          [
+            "Structural Sector Future",
+            10
+          ],
+          [
+            "Future-Stack Role",
+            7
+          ],
+          [
+            "Durable Moat",
+            14
+          ],
+          [
+            "Management & Capital Allocation",
+            8
+          ],
+          [
+            "Proof / Milestone Quality",
+            14
+          ]
+        ],
+        "qualitative_cap_total": 53
+      },
+      "source": "broad_scan"
+    },
+    {
+      "ticker": "ALSN",
+      "theme": "Consumer Cyclical",
+      "quant": {
+        "ticker": "ALSN",
+        "quant_details": {
+          "Revenue Quality & Growth": {
+            "score": 12,
+            "reason": "trailing revenue growth 92.4%"
+          },
+          "Margin Path / Unit Economics": {
+            "score": 8,
+            "reason": "operating margin 19.1%"
+          },
+          "FCF & Balance Sheet": {
+            "score": 6,
+            "reason": "FCF margin 4.8%, net debt position"
+          },
+          "Valuation": {
+            "score": 6,
+            "reason": "P/E = 18.4"
+          },
+          "Macro / Rate Sensitivity": {
+            "score": 1,
+            "reason": "beta 0.97, debt/equity ~2.12x"
+          }
+        },
+        "quant_total": 33,
+        "quant_cap_achieved": 47,
+        "quant_cap_full": 47,
+        "missing_data_categories": [],
+        "qualitative_pending": [
+          [
+            "Structural Sector Future",
+            10
+          ],
+          [
+            "Future-Stack Role",
+            7
+          ],
+          [
+            "Durable Moat",
+            14
+          ],
+          [
+            "Management & Capital Allocation",
+            8
+          ],
+          [
+            "Proof / Milestone Quality",
+            14
+          ]
+        ],
+        "qualitative_cap_total": 53
+      },
+      "source": "broad_scan"
+    },
+    {
       "ticker": "A",
       "theme": "Healthcare",
       "quant": {
@@ -1215,7 +1614,7 @@
           },
           "FCF & Balance Sheet": {
             "score": 9,
-            "reason": "FCF margin 12.2%, net debt position"
+            "reason": "FCF margin 15.1%, net debt position"
           },
           "Valuation": {
             "score": 6,
@@ -1223,7 +1622,7 @@
           },
           "Macro / Rate Sensitivity": {
             "score": 5,
-            "reason": "beta 1.00, debt/equity ~0.40x"
+            "reason": "beta 1.09, debt/equity ~0.40x"
           }
         },
         "quant_total": 32,
@@ -1314,6 +1713,293 @@
       "source": "broad_scan"
     },
     {
+      "ticker": "AHRT",
+      "theme": "Real Estate",
+      "quant": {
+        "ticker": "AHRT",
+        "quant_details": {
+          "Revenue Quality & Growth": {
+            "score": 4,
+            "reason": "trailing revenue growth 3.9%"
+          },
+          "Margin Path / Unit Economics": {
+            "score": 8,
+            "reason": "operating margin 24.1%"
+          },
+          "FCF & Balance Sheet": {
+            "score": 9,
+            "reason": "FCF margin 53.1%, net debt position"
+          },
+          "Valuation": {
+            "score": 8,
+            "reason": "P/S = 2.0"
+          },
+          "Macro / Rate Sensitivity": {
+            "score": 3,
+            "reason": "beta 1.09, debt/equity ~1.50x"
+          }
+        },
+        "quant_total": 32,
+        "quant_cap_achieved": 47,
+        "quant_cap_full": 47,
+        "missing_data_categories": [],
+        "qualitative_pending": [
+          [
+            "Structural Sector Future",
+            10
+          ],
+          [
+            "Future-Stack Role",
+            7
+          ],
+          [
+            "Durable Moat",
+            14
+          ],
+          [
+            "Management & Capital Allocation",
+            8
+          ],
+          [
+            "Proof / Milestone Quality",
+            14
+          ]
+        ],
+        "qualitative_cap_total": 53
+      },
+      "source": "broad_scan"
+    },
+    {
+      "ticker": "ALB-PA",
+      "theme": "Basic Materials",
+      "quant": {
+        "ticker": "ALB-PA",
+        "quant_details": {
+          "Revenue Quality & Growth": {
+            "score": 10,
+            "reason": "trailing revenue growth 31.1%"
+          },
+          "Margin Path / Unit Economics": {
+            "score": 10,
+            "reason": "operating margin 27.7%"
+          },
+          "FCF & Balance Sheet": {
+            "score": 9,
+            "reason": "FCF margin 22.6%, net debt position"
+          },
+          "Valuation": {
+            "score": null,
+            "reason": "neither trailingPE nor priceToSalesTrailing12Months reported"
+          },
+          "Macro / Rate Sensitivity": {
+            "score": 3,
+            "reason": "beta 1.33, debt/equity ~0.19x"
+          }
+        },
+        "quant_total": 32,
+        "quant_cap_achieved": 39,
+        "quant_cap_full": 47,
+        "missing_data_categories": [
+          "Valuation"
+        ],
+        "qualitative_pending": [
+          [
+            "Structural Sector Future",
+            10
+          ],
+          [
+            "Future-Stack Role",
+            7
+          ],
+          [
+            "Durable Moat",
+            14
+          ],
+          [
+            "Management & Capital Allocation",
+            8
+          ],
+          [
+            "Proof / Milestone Quality",
+            14
+          ]
+        ],
+        "qualitative_cap_total": 53
+      },
+      "source": "broad_scan"
+    },
+    {
+      "ticker": "ALLE",
+      "theme": "Industrials",
+      "quant": {
+        "ticker": "ALLE",
+        "quant_details": {
+          "Revenue Quality & Growth": {
+            "score": 6,
+            "reason": "trailing revenue growth 12.7%"
+          },
+          "Margin Path / Unit Economics": {
+            "score": 8,
+            "reason": "operating margin 22.1%"
+          },
+          "FCF & Balance Sheet": {
+            "score": 9,
+            "reason": "FCF margin 11.3%, net debt position"
+          },
+          "Valuation": {
+            "score": 6,
+            "reason": "P/E = 20.2"
+          },
+          "Macro / Rate Sensitivity": {
+            "score": 3,
+            "reason": "beta 0.84, debt/equity ~1.05x"
+          }
+        },
+        "quant_total": 32,
+        "quant_cap_achieved": 47,
+        "quant_cap_full": 47,
+        "missing_data_categories": [],
+        "qualitative_pending": [
+          [
+            "Structural Sector Future",
+            10
+          ],
+          [
+            "Future-Stack Role",
+            7
+          ],
+          [
+            "Durable Moat",
+            14
+          ],
+          [
+            "Management & Capital Allocation",
+            8
+          ],
+          [
+            "Proof / Milestone Quality",
+            14
+          ]
+        ],
+        "qualitative_cap_total": 53
+      },
+      "source": "broad_scan"
+    },
+    {
+      "ticker": "ALX",
+      "theme": "Real Estate",
+      "quant": {
+        "ticker": "ALX",
+        "quant_details": {
+          "Revenue Quality & Growth": {
+            "score": 4,
+            "reason": "trailing revenue growth 6.1%"
+          },
+          "Margin Path / Unit Economics": {
+            "score": 10,
+            "reason": "operating margin 30.1%"
+          },
+          "FCF & Balance Sheet": {
+            "score": 9,
+            "reason": "FCF margin 21.3%, net debt position"
+          },
+          "Valuation": {
+            "score": 8,
+            "reason": "P/E = 7.4"
+          },
+          "Macro / Rate Sensitivity": {
+            "score": 1,
+            "reason": "beta 0.75, debt/equity ~3.83x"
+          }
+        },
+        "quant_total": 32,
+        "quant_cap_achieved": 47,
+        "quant_cap_full": 47,
+        "missing_data_categories": [],
+        "qualitative_pending": [
+          [
+            "Structural Sector Future",
+            10
+          ],
+          [
+            "Future-Stack Role",
+            7
+          ],
+          [
+            "Durable Moat",
+            14
+          ],
+          [
+            "Management & Capital Allocation",
+            8
+          ],
+          [
+            "Proof / Milestone Quality",
+            14
+          ]
+        ],
+        "qualitative_cap_total": 53
+      },
+      "source": "broad_scan"
+    },
+    {
+      "ticker": "AM",
+      "theme": "Energy",
+      "quant": {
+        "ticker": "AM",
+        "quant_details": {
+          "Revenue Quality & Growth": {
+            "score": 6,
+            "reason": "trailing revenue growth 8.3%"
+          },
+          "Margin Path / Unit Economics": {
+            "score": 10,
+            "reason": "operating margin 52.0%"
+          },
+          "FCF & Balance Sheet": {
+            "score": 9,
+            "reason": "FCF margin 33.0%, net debt position"
+          },
+          "Valuation": {
+            "score": 6,
+            "reason": "P/E = 24.5"
+          },
+          "Macro / Rate Sensitivity": {
+            "score": 1,
+            "reason": "beta 0.63, debt/equity ~1.86x"
+          }
+        },
+        "quant_total": 32,
+        "quant_cap_achieved": 47,
+        "quant_cap_full": 47,
+        "missing_data_categories": [],
+        "qualitative_pending": [
+          [
+            "Structural Sector Future",
+            10
+          ],
+          [
+            "Future-Stack Role",
+            7
+          ],
+          [
+            "Durable Moat",
+            14
+          ],
+          [
+            "Management & Capital Allocation",
+            8
+          ],
+          [
+            "Proof / Milestone Quality",
+            14
+          ]
+        ],
+        "qualitative_cap_total": 53
+      },
+      "source": "broad_scan"
+    },
+    {
       "ticker": "ABBV",
       "theme": "Healthcare",
       "quant": {
@@ -1333,7 +2019,7 @@
           },
           "Valuation": {
             "score": 1,
-            "reason": "P/E = 74.2"
+            "reason": "P/E = 73.6"
           },
           "Macro / Rate Sensitivity": {
             "score": 5,
@@ -1449,7 +2135,7 @@
           },
           "Valuation": {
             "score": 8,
-            "reason": "P/E = 12.1"
+            "reason": "P/E = 12.2"
           },
           "Macro / Rate Sensitivity": {
             "score": 5,
@@ -1544,6 +2230,179 @@
       "source": "broad_scan"
     },
     {
+      "ticker": "ALM",
+      "theme": "Basic Materials",
+      "quant": {
+        "ticker": "ALM",
+        "quant_details": {
+          "Revenue Quality & Growth": {
+            "score": 12,
+            "reason": "trailing revenue growth 497.7%"
+          },
+          "Margin Path / Unit Economics": {
+            "score": 10,
+            "reason": "operating margin 37.5%"
+          },
+          "FCF & Balance Sheet": {
+            "score": 4,
+            "reason": "FCF margin -58.1%, net cash position"
+          },
+          "Valuation": {
+            "score": 2,
+            "reason": "P/E = 60.9"
+          },
+          "Macro / Rate Sensitivity": {
+            "score": 3,
+            "reason": "beta 1.39, debt/equity ~1.47x"
+          }
+        },
+        "quant_total": 31,
+        "quant_cap_achieved": 47,
+        "quant_cap_full": 47,
+        "missing_data_categories": [],
+        "qualitative_pending": [
+          [
+            "Structural Sector Future",
+            10
+          ],
+          [
+            "Future-Stack Role",
+            7
+          ],
+          [
+            "Durable Moat",
+            14
+          ],
+          [
+            "Management & Capital Allocation",
+            8
+          ],
+          [
+            "Proof / Milestone Quality",
+            14
+          ]
+        ],
+        "qualitative_cap_total": 53
+      },
+      "source": "broad_scan"
+    },
+    {
+      "ticker": "ALNY",
+      "theme": "Healthcare",
+      "quant": {
+        "ticker": "ALNY",
+        "quant_details": {
+          "Revenue Quality & Growth": {
+            "score": 12,
+            "reason": "trailing revenue growth 66.9%"
+          },
+          "Margin Path / Unit Economics": {
+            "score": 8,
+            "reason": "operating margin 17.9%"
+          },
+          "FCF & Balance Sheet": {
+            "score": 6,
+            "reason": "FCF margin 5.7%, net cash position"
+          },
+          "Valuation": {
+            "score": 4,
+            "reason": "P/E = 38.3"
+          },
+          "Macro / Rate Sensitivity": {
+            "score": 1,
+            "reason": "beta 0.30, debt/equity ~2.21x"
+          }
+        },
+        "quant_total": 31,
+        "quant_cap_achieved": 47,
+        "quant_cap_full": 47,
+        "missing_data_categories": [],
+        "qualitative_pending": [
+          [
+            "Structural Sector Future",
+            10
+          ],
+          [
+            "Future-Stack Role",
+            7
+          ],
+          [
+            "Durable Moat",
+            14
+          ],
+          [
+            "Management & Capital Allocation",
+            8
+          ],
+          [
+            "Proof / Milestone Quality",
+            14
+          ]
+        ],
+        "qualitative_cap_total": 53
+      },
+      "source": "broad_scan"
+    },
+    {
+      "ticker": "AMAL",
+      "theme": "Financial Services",
+      "quant": {
+        "ticker": "AMAL",
+        "quant_details": {
+          "Revenue Quality & Growth": {
+            "score": 8,
+            "reason": "trailing revenue growth 23.5%"
+          },
+          "Margin Path / Unit Economics": {
+            "score": 10,
+            "reason": "operating margin 50.8%"
+          },
+          "FCF & Balance Sheet": {
+            "score": null,
+            "reason": "freeCashflow/totalRevenue not reported"
+          },
+          "Valuation": {
+            "score": 8,
+            "reason": "P/E = 12.8"
+          },
+          "Macro / Rate Sensitivity": {
+            "score": 5,
+            "reason": "beta 0.78, debt/equity ~0.00x"
+          }
+        },
+        "quant_total": 31,
+        "quant_cap_achieved": 35,
+        "quant_cap_full": 47,
+        "missing_data_categories": [
+          "FCF & Balance Sheet"
+        ],
+        "qualitative_pending": [
+          [
+            "Structural Sector Future",
+            10
+          ],
+          [
+            "Future-Stack Role",
+            7
+          ],
+          [
+            "Durable Moat",
+            14
+          ],
+          [
+            "Management & Capital Allocation",
+            8
+          ],
+          [
+            "Proof / Milestone Quality",
+            14
+          ]
+        ],
+        "qualitative_cap_total": 53
+      },
+      "source": "broad_scan"
+    },
+    {
       "ticker": "ADP",
       "theme": "Technology",
       "quant": {
@@ -1563,7 +2422,7 @@
           },
           "Valuation": {
             "score": 6,
-            "reason": "P/E = 23.6"
+            "reason": "P/E = 23.5"
           },
           "Macro / Rate Sensitivity": {
             "score": 3,
@@ -1625,6 +2484,63 @@
           "Macro / Rate Sensitivity": {
             "score": 1,
             "reason": "beta 1.03, debt/equity ~2.24x"
+          }
+        },
+        "quant_total": 30,
+        "quant_cap_achieved": 47,
+        "quant_cap_full": 47,
+        "missing_data_categories": [],
+        "qualitative_pending": [
+          [
+            "Structural Sector Future",
+            10
+          ],
+          [
+            "Future-Stack Role",
+            7
+          ],
+          [
+            "Durable Moat",
+            14
+          ],
+          [
+            "Management & Capital Allocation",
+            8
+          ],
+          [
+            "Proof / Milestone Quality",
+            14
+          ]
+        ],
+        "qualitative_cap_total": 53
+      },
+      "source": "broad_scan"
+    },
+    {
+      "ticker": "AKR",
+      "theme": "Real Estate",
+      "quant": {
+        "ticker": "AKR",
+        "quant_details": {
+          "Revenue Quality & Growth": {
+            "score": 6,
+            "reason": "trailing revenue growth 13.4%"
+          },
+          "Margin Path / Unit Economics": {
+            "score": 10,
+            "reason": "operating margin 29.9%"
+          },
+          "FCF & Balance Sheet": {
+            "score": 9,
+            "reason": "FCF margin 45.2%, net debt position"
+          },
+          "Valuation": {
+            "score": 2,
+            "reason": "P/E = 53.2"
+          },
+          "Macro / Rate Sensitivity": {
+            "score": 3,
+            "reason": "beta 1.11, debt/equity ~0.63x"
           }
         },
         "quant_total": 30,
@@ -1850,11 +2766,241 @@
           },
           "Valuation": {
             "score": 2,
-            "reason": "P/E = 56.2"
+            "reason": "P/E = 56.1"
           },
           "Macro / Rate Sensitivity": {
             "score": 3,
             "reason": "beta 1.30, debt/equity ~0.95x"
+          }
+        },
+        "quant_total": 29,
+        "quant_cap_achieved": 47,
+        "quant_cap_full": 47,
+        "missing_data_categories": [],
+        "qualitative_pending": [
+          [
+            "Structural Sector Future",
+            10
+          ],
+          [
+            "Future-Stack Role",
+            7
+          ],
+          [
+            "Durable Moat",
+            14
+          ],
+          [
+            "Management & Capital Allocation",
+            8
+          ],
+          [
+            "Proof / Milestone Quality",
+            14
+          ]
+        ],
+        "qualitative_cap_total": 53
+      },
+      "source": "broad_scan"
+    },
+    {
+      "ticker": "AHR",
+      "theme": "Real Estate",
+      "quant": {
+        "ticker": "AHR",
+        "quant_details": {
+          "Revenue Quality & Growth": {
+            "score": 8,
+            "reason": "trailing revenue growth 24.7%"
+          },
+          "Margin Path / Unit Economics": {
+            "score": 6,
+            "reason": "operating margin 6.8%"
+          },
+          "FCF & Balance Sheet": {
+            "score": 9,
+            "reason": "FCF margin 15.8%, net debt position"
+          },
+          "Valuation": {
+            "score": 1,
+            "reason": "P/E = 74.6"
+          },
+          "Macro / Rate Sensitivity": {
+            "score": 5,
+            "reason": "beta 0.74, debt/equity ~0.42x"
+          }
+        },
+        "quant_total": 29,
+        "quant_cap_achieved": 47,
+        "quant_cap_full": 47,
+        "missing_data_categories": [],
+        "qualitative_pending": [
+          [
+            "Structural Sector Future",
+            10
+          ],
+          [
+            "Future-Stack Role",
+            7
+          ],
+          [
+            "Durable Moat",
+            14
+          ],
+          [
+            "Management & Capital Allocation",
+            8
+          ],
+          [
+            "Proof / Milestone Quality",
+            14
+          ]
+        ],
+        "qualitative_cap_total": 53
+      },
+      "source": "broad_scan"
+    },
+    {
+      "ticker": "AIR",
+      "theme": "Industrials",
+      "quant": {
+        "ticker": "AIR",
+        "quant_details": {
+          "Revenue Quality & Growth": {
+            "score": 8,
+            "reason": "trailing revenue growth 24.1%"
+          },
+          "Margin Path / Unit Economics": {
+            "score": 6,
+            "reason": "operating margin 8.1%"
+          },
+          "FCF & Balance Sheet": {
+            "score": 6,
+            "reason": "FCF margin 1.0%, net debt position"
+          },
+          "Valuation": {
+            "score": 6,
+            "reason": "P/E = 20.9"
+          },
+          "Macro / Rate Sensitivity": {
+            "score": 3,
+            "reason": "beta 1.11, debt/equity ~0.56x"
+          }
+        },
+        "quant_total": 29,
+        "quant_cap_achieved": 47,
+        "quant_cap_full": 47,
+        "missing_data_categories": [],
+        "qualitative_pending": [
+          [
+            "Structural Sector Future",
+            10
+          ],
+          [
+            "Future-Stack Role",
+            7
+          ],
+          [
+            "Durable Moat",
+            14
+          ],
+          [
+            "Management & Capital Allocation",
+            8
+          ],
+          [
+            "Proof / Milestone Quality",
+            14
+          ]
+        ],
+        "qualitative_cap_total": 53
+      },
+      "source": "broad_scan"
+    },
+    {
+      "ticker": "ALLY",
+      "theme": "Financial Services",
+      "quant": {
+        "ticker": "ALLY",
+        "quant_details": {
+          "Revenue Quality & Growth": {
+            "score": 6,
+            "reason": "trailing revenue growth 11.0%"
+          },
+          "Margin Path / Unit Economics": {
+            "score": 10,
+            "reason": "operating margin 25.3%"
+          },
+          "FCF & Balance Sheet": {
+            "score": null,
+            "reason": "freeCashflow/totalRevenue not reported"
+          },
+          "Valuation": {
+            "score": 8,
+            "reason": "P/E = 8.9"
+          },
+          "Macro / Rate Sensitivity": {
+            "score": 5,
+            "reason": "beta 1.07, debt/equity ~0.00x"
+          }
+        },
+        "quant_total": 29,
+        "quant_cap_achieved": 35,
+        "quant_cap_full": 47,
+        "missing_data_categories": [
+          "FCF & Balance Sheet"
+        ],
+        "qualitative_pending": [
+          [
+            "Structural Sector Future",
+            10
+          ],
+          [
+            "Future-Stack Role",
+            7
+          ],
+          [
+            "Durable Moat",
+            14
+          ],
+          [
+            "Management & Capital Allocation",
+            8
+          ],
+          [
+            "Proof / Milestone Quality",
+            14
+          ]
+        ],
+        "qualitative_cap_total": 53
+      },
+      "source": "broad_scan"
+    },
+    {
+      "ticker": "ALRM",
+      "theme": "Technology",
+      "quant": {
+        "ticker": "ALRM",
+        "quant_details": {
+          "Revenue Quality & Growth": {
+            "score": 6,
+            "reason": "trailing revenue growth 9.2%"
+          },
+          "Margin Path / Unit Economics": {
+            "score": 8,
+            "reason": "operating margin 15.1%"
+          },
+          "FCF & Balance Sheet": {
+            "score": 6,
+            "reason": "FCF margin 9.4%, net debt position"
+          },
+          "Valuation": {
+            "score": 6,
+            "reason": "P/E = 24.2"
+          },
+          "Macro / Rate Sensitivity": {
+            "score": 3,
+            "reason": "beta 0.76, debt/equity ~0.62x"
           }
         },
         "quant_total": 29,
@@ -2059,6 +3205,291 @@
       "source": "broad_scan"
     },
     {
+      "ticker": "AIP",
+      "theme": "Technology",
+      "quant": {
+        "ticker": "AIP",
+        "quant_details": {
+          "Revenue Quality & Growth": {
+            "score": 12,
+            "reason": "trailing revenue growth 46.2%"
+          },
+          "Margin Path / Unit Economics": {
+            "score": 1,
+            "reason": "operating margin -48.5%"
+          },
+          "FCF & Balance Sheet": {
+            "score": 12,
+            "reason": "FCF margin 36.7%, net cash position"
+          },
+          "Valuation": {
+            "score": 2,
+            "reason": "P/S = 14.3"
+          },
+          "Macro / Rate Sensitivity": {
+            "score": 1,
+            "reason": "beta 1.91, debt/equity ~0.13x"
+          }
+        },
+        "quant_total": 28,
+        "quant_cap_achieved": 47,
+        "quant_cap_full": 47,
+        "missing_data_categories": [],
+        "qualitative_pending": [
+          [
+            "Structural Sector Future",
+            10
+          ],
+          [
+            "Future-Stack Role",
+            7
+          ],
+          [
+            "Durable Moat",
+            14
+          ],
+          [
+            "Management & Capital Allocation",
+            8
+          ],
+          [
+            "Proof / Milestone Quality",
+            14
+          ]
+        ],
+        "qualitative_cap_total": 53
+      },
+      "source": "broad_scan"
+    },
+    {
+      "ticker": "ALC",
+      "theme": "Healthcare",
+      "quant": {
+        "ticker": "ALC",
+        "quant_details": {
+          "Revenue Quality & Growth": {
+            "score": 6,
+            "reason": "trailing revenue growth 8.7%"
+          },
+          "Margin Path / Unit Economics": {
+            "score": 6,
+            "reason": "operating margin 14.6%"
+          },
+          "FCF & Balance Sheet": {
+            "score": 9,
+            "reason": "FCF margin 11.7%, net debt position"
+          },
+          "Valuation": {
+            "score": 2,
+            "reason": "P/E = 48.7"
+          },
+          "Macro / Rate Sensitivity": {
+            "score": 5,
+            "reason": "beta 0.70, debt/equity ~0.25x"
+          }
+        },
+        "quant_total": 28,
+        "quant_cap_achieved": 47,
+        "quant_cap_full": 47,
+        "missing_data_categories": [],
+        "qualitative_pending": [
+          [
+            "Structural Sector Future",
+            10
+          ],
+          [
+            "Future-Stack Role",
+            7
+          ],
+          [
+            "Durable Moat",
+            14
+          ],
+          [
+            "Management & Capital Allocation",
+            8
+          ],
+          [
+            "Proof / Milestone Quality",
+            14
+          ]
+        ],
+        "qualitative_cap_total": 53
+      },
+      "source": "broad_scan"
+    },
+    {
+      "ticker": "ALGN",
+      "theme": "Healthcare",
+      "quant": {
+        "ticker": "ALGN",
+        "quant_details": {
+          "Revenue Quality & Growth": {
+            "score": 4,
+            "reason": "trailing revenue growth 4.3%"
+          },
+          "Margin Path / Unit Economics": {
+            "score": 8,
+            "reason": "operating margin 18.2%"
+          },
+          "FCF & Balance Sheet": {
+            "score": 9,
+            "reason": "FCF margin 14.4%, net cash position"
+          },
+          "Valuation": {
+            "score": 6,
+            "reason": "P/E = 25.0"
+          },
+          "Macro / Rate Sensitivity": {
+            "score": 1,
+            "reason": "beta 1.64, debt/equity ~2.85x"
+          }
+        },
+        "quant_total": 28,
+        "quant_cap_achieved": 47,
+        "quant_cap_full": 47,
+        "missing_data_categories": [],
+        "qualitative_pending": [
+          [
+            "Structural Sector Future",
+            10
+          ],
+          [
+            "Future-Stack Role",
+            7
+          ],
+          [
+            "Durable Moat",
+            14
+          ],
+          [
+            "Management & Capital Allocation",
+            8
+          ],
+          [
+            "Proof / Milestone Quality",
+            14
+          ]
+        ],
+        "qualitative_cap_total": 53
+      },
+      "source": "broad_scan"
+    },
+    {
+      "ticker": "ALH",
+      "theme": "Consumer Cyclical",
+      "quant": {
+        "ticker": "ALH",
+        "quant_details": {
+          "Revenue Quality & Growth": {
+            "score": 4,
+            "reason": "trailing revenue growth 6.6%"
+          },
+          "Margin Path / Unit Economics": {
+            "score": 8,
+            "reason": "operating margin 22.2%"
+          },
+          "FCF & Balance Sheet": {
+            "score": 9,
+            "reason": "FCF margin 13.8%, net debt position"
+          },
+          "Valuation": {
+            "score": 6,
+            "reason": "P/E = 22.9"
+          },
+          "Macro / Rate Sensitivity": {
+            "score": 1,
+            "reason": "beta 1.00, debt/equity ~3.79x"
+          }
+        },
+        "quant_total": 28,
+        "quant_cap_achieved": 47,
+        "quant_cap_full": 47,
+        "missing_data_categories": [],
+        "qualitative_pending": [
+          [
+            "Structural Sector Future",
+            10
+          ],
+          [
+            "Future-Stack Role",
+            7
+          ],
+          [
+            "Durable Moat",
+            14
+          ],
+          [
+            "Management & Capital Allocation",
+            8
+          ],
+          [
+            "Proof / Milestone Quality",
+            14
+          ]
+        ],
+        "qualitative_cap_total": 53
+      },
+      "source": "broad_scan"
+    },
+    {
+      "ticker": "ALKT",
+      "theme": "Technology",
+      "quant": {
+        "ticker": "ALKT",
+        "quant_details": {
+          "Revenue Quality & Growth": {
+            "score": 8,
+            "reason": "trailing revenue growth 15.9%"
+          },
+          "Margin Path / Unit Economics": {
+            "score": 2,
+            "reason": "operating margin -5.8%"
+          },
+          "FCF & Balance Sheet": {
+            "score": 9,
+            "reason": "FCF margin 16.9%, net debt position"
+          },
+          "Valuation": {
+            "score": 6,
+            "reason": "P/S = 3.0"
+          },
+          "Macro / Rate Sensitivity": {
+            "score": 3,
+            "reason": "beta 0.61, debt/equity ~0.99x"
+          }
+        },
+        "quant_total": 28,
+        "quant_cap_achieved": 47,
+        "quant_cap_full": 47,
+        "missing_data_categories": [],
+        "qualitative_pending": [
+          [
+            "Structural Sector Future",
+            10
+          ],
+          [
+            "Future-Stack Role",
+            7
+          ],
+          [
+            "Durable Moat",
+            14
+          ],
+          [
+            "Management & Capital Allocation",
+            8
+          ],
+          [
+            "Proof / Milestone Quality",
+            14
+          ]
+        ],
+        "qualitative_cap_total": 53
+      },
+      "source": "broad_scan"
+    },
+    {
       "ticker": "ABBNY",
       "theme": "Industrials",
       "quant": {
@@ -2078,7 +3509,7 @@
           },
           "Valuation": {
             "score": 4,
-            "reason": "P/E = 36.5"
+            "reason": "P/E = 36.4"
           },
           "Macro / Rate Sensitivity": {
             "score": 3,
@@ -2578,6 +4009,234 @@
       "source": "broad_scan"
     },
     {
+      "ticker": "AIN",
+      "theme": "Consumer Cyclical",
+      "quant": {
+        "ticker": "AIN",
+        "quant_details": {
+          "Revenue Quality & Growth": {
+            "score": 4,
+            "reason": "trailing revenue growth 5.8%"
+          },
+          "Margin Path / Unit Economics": {
+            "score": 6,
+            "reason": "operating margin 11.7%"
+          },
+          "FCF & Balance Sheet": {
+            "score": 6,
+            "reason": "FCF margin 0.4%, net debt position"
+          },
+          "Valuation": {
+            "score": 8,
+            "reason": "P/S = 1.4"
+          },
+          "Macro / Rate Sensitivity": {
+            "score": 3,
+            "reason": "beta 1.16, debt/equity ~0.60x"
+          }
+        },
+        "quant_total": 27,
+        "quant_cap_achieved": 47,
+        "quant_cap_full": 47,
+        "missing_data_categories": [],
+        "qualitative_pending": [
+          [
+            "Structural Sector Future",
+            10
+          ],
+          [
+            "Future-Stack Role",
+            7
+          ],
+          [
+            "Durable Moat",
+            14
+          ],
+          [
+            "Management & Capital Allocation",
+            8
+          ],
+          [
+            "Proof / Milestone Quality",
+            14
+          ]
+        ],
+        "qualitative_cap_total": 53
+      },
+      "source": "broad_scan"
+    },
+    {
+      "ticker": "ALG",
+      "theme": "Industrials",
+      "quant": {
+        "ticker": "ALG",
+        "quant_details": {
+          "Revenue Quality & Growth": {
+            "score": 4,
+            "reason": "trailing revenue growth 7.6%"
+          },
+          "Margin Path / Unit Economics": {
+            "score": 6,
+            "reason": "operating margin 10.2%"
+          },
+          "FCF & Balance Sheet": {
+            "score": 6,
+            "reason": "FCF margin 5.5%, net debt position"
+          },
+          "Valuation": {
+            "score": 6,
+            "reason": "P/E = 19.3"
+          },
+          "Macro / Rate Sensitivity": {
+            "score": 5,
+            "reason": "beta 1.09, debt/equity ~0.23x"
+          }
+        },
+        "quant_total": 27,
+        "quant_cap_achieved": 47,
+        "quant_cap_full": 47,
+        "missing_data_categories": [],
+        "qualitative_pending": [
+          [
+            "Structural Sector Future",
+            10
+          ],
+          [
+            "Future-Stack Role",
+            7
+          ],
+          [
+            "Durable Moat",
+            14
+          ],
+          [
+            "Management & Capital Allocation",
+            8
+          ],
+          [
+            "Proof / Milestone Quality",
+            14
+          ]
+        ],
+        "qualitative_cap_total": 53
+      },
+      "source": "broad_scan"
+    },
+    {
+      "ticker": "ALGM",
+      "theme": "Technology",
+      "quant": {
+        "ticker": "ALGM",
+        "quant_details": {
+          "Revenue Quality & Growth": {
+            "score": 10,
+            "reason": "trailing revenue growth 27.5%"
+          },
+          "Margin Path / Unit Economics": {
+            "score": 6,
+            "reason": "operating margin 9.8%"
+          },
+          "FCF & Balance Sheet": {
+            "score": 9,
+            "reason": "FCF margin 10.9%, net debt position"
+          },
+          "Valuation": {
+            "score": 1,
+            "reason": "P/E = 564.7"
+          },
+          "Macro / Rate Sensitivity": {
+            "score": 1,
+            "reason": "beta 1.91, debt/equity ~0.31x"
+          }
+        },
+        "quant_total": 27,
+        "quant_cap_achieved": 47,
+        "quant_cap_full": 47,
+        "missing_data_categories": [],
+        "qualitative_pending": [
+          [
+            "Structural Sector Future",
+            10
+          ],
+          [
+            "Future-Stack Role",
+            7
+          ],
+          [
+            "Durable Moat",
+            14
+          ],
+          [
+            "Management & Capital Allocation",
+            8
+          ],
+          [
+            "Proof / Milestone Quality",
+            14
+          ]
+        ],
+        "qualitative_cap_total": 53
+      },
+      "source": "broad_scan"
+    },
+    {
+      "ticker": "ALV",
+      "theme": "Consumer Cyclical",
+      "quant": {
+        "ticker": "ALV",
+        "quant_details": {
+          "Revenue Quality & Growth": {
+            "score": 4,
+            "reason": "trailing revenue growth 3.3%"
+          },
+          "Margin Path / Unit Economics": {
+            "score": 6,
+            "reason": "operating margin 9.6%"
+          },
+          "FCF & Balance Sheet": {
+            "score": 6,
+            "reason": "FCF margin 6.7%, net debt position"
+          },
+          "Valuation": {
+            "score": 8,
+            "reason": "P/E = 13.3"
+          },
+          "Macro / Rate Sensitivity": {
+            "score": 3,
+            "reason": "beta 1.37, debt/equity ~0.88x"
+          }
+        },
+        "quant_total": 27,
+        "quant_cap_achieved": 47,
+        "quant_cap_full": 47,
+        "missing_data_categories": [],
+        "qualitative_pending": [
+          [
+            "Structural Sector Future",
+            10
+          ],
+          [
+            "Future-Stack Role",
+            7
+          ],
+          [
+            "Durable Moat",
+            14
+          ],
+          [
+            "Management & Capital Allocation",
+            8
+          ],
+          [
+            "Proof / Milestone Quality",
+            14
+          ]
+        ],
+        "qualitative_cap_total": 53
+      },
+      "source": "broad_scan"
+    },
+    {
       "ticker": "ABTC",
       "theme": "Financial Services",
       "quant": {
@@ -2602,6 +4261,63 @@
           "Macro / Rate Sensitivity": {
             "score": 5,
             "reason": "beta 1.00, debt/equity ~0.31x"
+          }
+        },
+        "quant_total": 26,
+        "quant_cap_achieved": 47,
+        "quant_cap_full": 47,
+        "missing_data_categories": [],
+        "qualitative_pending": [
+          [
+            "Structural Sector Future",
+            10
+          ],
+          [
+            "Future-Stack Role",
+            7
+          ],
+          [
+            "Durable Moat",
+            14
+          ],
+          [
+            "Management & Capital Allocation",
+            8
+          ],
+          [
+            "Proof / Milestone Quality",
+            14
+          ]
+        ],
+        "qualitative_cap_total": 53
+      },
+      "source": "broad_scan"
+    },
+    {
+      "ticker": "AMBP",
+      "theme": "Consumer Cyclical",
+      "quant": {
+        "ticker": "AMBP",
+        "quant_details": {
+          "Revenue Quality & Growth": {
+            "score": 8,
+            "reason": "trailing revenue growth 17.7%"
+          },
+          "Margin Path / Unit Economics": {
+            "score": 6,
+            "reason": "operating margin 6.8%"
+          },
+          "FCF & Balance Sheet": {
+            "score": 6,
+            "reason": "FCF margin 4.4%, net debt position"
+          },
+          "Valuation": {
+            "score": 1,
+            "reason": "P/E = 88.8"
+          },
+          "Macro / Rate Sensitivity": {
+            "score": 5,
+            "reason": "beta 0.53, debt/equity ~0.00x"
           }
         },
         "quant_total": 26,
@@ -2666,6 +4382,65 @@
         "quant_cap_full": 47,
         "missing_data_categories": [
           "Revenue Quality & Growth",
+          "FCF & Balance Sheet"
+        ],
+        "qualitative_pending": [
+          [
+            "Structural Sector Future",
+            10
+          ],
+          [
+            "Future-Stack Role",
+            7
+          ],
+          [
+            "Durable Moat",
+            14
+          ],
+          [
+            "Management & Capital Allocation",
+            8
+          ],
+          [
+            "Proof / Milestone Quality",
+            14
+          ]
+        ],
+        "qualitative_cap_total": 53
+      },
+      "source": "broad_scan"
+    },
+    {
+      "ticker": "ALRS",
+      "theme": "Financial Services",
+      "quant": {
+        "ticker": "ALRS",
+        "quant_details": {
+          "Revenue Quality & Growth": {
+            "score": 4,
+            "reason": "trailing revenue growth 7.2%"
+          },
+          "Margin Path / Unit Economics": {
+            "score": 10,
+            "reason": "operating margin 36.5%"
+          },
+          "FCF & Balance Sheet": {
+            "score": null,
+            "reason": "freeCashflow/totalRevenue not reported"
+          },
+          "Valuation": {
+            "score": 4,
+            "reason": "P/E = 30.2"
+          },
+          "Macro / Rate Sensitivity": {
+            "score": 5,
+            "reason": "beta 0.68, debt/equity ~0.00x"
+          }
+        },
+        "quant_total": 23,
+        "quant_cap_achieved": 35,
+        "quant_cap_full": 47,
+        "missing_data_categories": [
           "FCF & Balance Sheet"
         ],
         "qualitative_pending": [
@@ -2832,7 +4607,7 @@
           },
           "Valuation": {
             "score": 8,
-            "reason": "P/E = 4.4"
+            "reason": "P/E = 4.5"
           },
           "Macro / Rate Sensitivity": {
             "score": 1,
@@ -2875,8 +4650,8 @@
   ],
   "scan_errors": [],
   "broad_scan_stats": {
-    "n_universe_checked": 300,
-    "n_liquid": 92
+    "n_universe_checked": 500,
+    "n_liquid": 139
   },
   "portfolio_report": {
     "holdings_analysis": {
